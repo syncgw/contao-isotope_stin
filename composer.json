@@ -9,6 +9,17 @@
             "homepage": "https://github.com/syncgw"
         }
     ],
+    "keywords" : [
+    	"isotope",
+    	"VAT",
+    	"UstID",
+    	"STIN",
+    	"MwSt",
+    	"Mehrwertsteuer",
+    	"EU-Tax",
+    	"order"
+	],
+ 
     "require": {
         "php": ">=5.6.0",
 		"contao/core-bundle":"~4.4",
