@@ -1,0 +1,34 @@
+{
+    "name": "syncgw/contao-isotope_stin",
+    "type": "contao-bundle",
+    "description": "Isotope EU STIN (Umsatzsteuer-ID) management for Contao.",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Florian Daeumling",
+            "homepage": "https://github.com/syncgw"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+		"contao/core-bundle":"~4.4",
+        "symfony/framework-bundle": "^3.3 || ^4.1",
+        "isotope/isotope-core":">=2.0.0"
+    },
+    "conflict": {
+        "contao/core": "*",
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "extra": {
+        "contao-manager-plugin": "syncgw\\Isotope_STINBundle\\ContaoManager\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "syncgw\\Isotope_STINBundle\\": "src/"
+        }
+    },
+    "support": {
+        "issues": "https://github.com/syncgw/contao-isotope_stin/issues",
+        "source": "https://github.com/syncgw/contao-isotope_stin"
+    }	
+}
