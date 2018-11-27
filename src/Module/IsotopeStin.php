@@ -1,17 +1,20 @@
 <?php
 
 /**
- * sync*gw Isotope_STIN Bundle
+ * sync*gw IsotopeSTIN Bundle
  *
  * @copyright  http://syncgw.com, 2013 - 2018
  * @author     Florian Daeumling, http://syncgw.com
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  */
 
+namespace syncgw\Isotope_STINBundle\Module;
+
 use Contao\Frontend;
+use Contao\Widget;
 use Isotope\Isotope;
 
-class IsotopeStin extends Frontend {
+class IsotopeSTIN extends Frontend {
 
 	/**
 	 * Validate STIN
@@ -243,14 +246,14 @@ class IsotopeStin extends Frontend {
 		// check STIN at EU server
 		// http://ec.europa.eu/taxation_customs/vies/checkVatService.wsdl
 		try {
-			$soap = new SoapClient('http://'.$host.'/taxation_customs/vies/checkVatService.wsdl', array( 'connection_timeout' => 10 ));
+			$soap = new \SoapClient('http://'.$host.'/taxation_customs/vies/checkVatService.wsdl', array( 'connection_timeout' => 10 ));
     		$result = $soap->checkVatApprox(array(
 				'countryCode' 			=> strtoupper($usr_country),
 				'vatNumber' 			=> $usr_vat_no,
 				'requesterCountryCode'	=> strtoupper($own_country),
 				'requesterVatNumber'	=> $own_vat_no,
 			));
-    	} catch (Exception $err) {
+    	} catch (\Exception $err) {
         	$obj->addError($GLOBALS['TL_LANG']['IsotopeStin']['connect_err']);
 			if (isset($err->faultcode))
 				$this->log('('.$err->faultcode.') '.$err->faultstring, 'IsotopeStin', TL_ERROR);
@@ -299,7 +302,7 @@ class IsotopeStin extends Frontend {
 
     	require TL_ROOT.'/vendor/syncgw/contao-isotope_stin/src/Module/IXR_Library.php';
 
-    	$client     = new IXR_Client('https://'.$host);
+    	$client     = new \IXR_Client('https://'.$host);
 		$UstId_1    = strtoupper($own_country.$own_vat_no);
 		$UstId_2    = strtoupper($usr_country.$usr_vat_no);
 		$Firmenname = null;
