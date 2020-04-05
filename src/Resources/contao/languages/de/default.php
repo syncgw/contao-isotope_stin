@@ -3,7 +3,7 @@
 /**
  * sync*gw IsotopeSTIN Bundle
  *
- * @copyright  http://syncgw.com, 2013 - 2018
+ * @copyright  http://syncgw.com, 2013 - 2020
  * @author     Florian Daeumling, http://syncgw.com
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  */
@@ -39,7 +39,7 @@ Stadt:        ##eu_customer_city##
 
 Mit freundlichen Gruessen
 Ihr sync*gw team
-(c) http://syncgw.com, 2012 - 2018
+(c) http://syncgw.com, 2013 - 2020
 ';
 
 ?>
