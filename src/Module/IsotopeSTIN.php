@@ -56,7 +56,7 @@ class IsotopeSTIN extends Frontend {
 	    if (!($c = $obj->Input->post('country'))) {
 	    	if (!($c = $obj->Input->post('billing_address_country'))) {
 	    		if (!($c = $obj->Input->post('billingaddress_country')))
-	    		    $c = $obj->Input->post('BillingAddress_country');
+	    		    $c = $obj->Input->post('BillingAddress_country'); //
 	    		$n = 'BillingAddress_';
 	    	}
 	    } else
