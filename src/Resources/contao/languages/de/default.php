@@ -39,7 +39,7 @@ Stadt:        ##eu_customer_city##
 
 Mit freundlichen Gruessen
 Ihr sync*gw team
-(c) http://syncgw.com, 2013 - 2020
+(c) http://syncgw.com, 2013 - 2020 
 ';
 
 ?>
