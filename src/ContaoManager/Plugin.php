@@ -3,7 +3,7 @@
 /**
  * sync*gw IsotopeSTIN Bundle
  *
- * @copyright  http://syncgw.com, 2013 - 2020 
+ * @copyright  http://syncgw.com, 2013 - 2020
  * @author     Florian Daeumling, http://syncgw.com
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  */
@@ -17,9 +17,6 @@ use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
 use syncgw\Isotope_STINBundle\Isotope_STINBundle;
 
 class Plugin implements BundlePluginInterface {
-    /**
-     * {@inheritdoc}
-     */
     public function getBundles(ParserInterface $parser) {
         return [
             BundleConfig::create(Isotope_STINBundle::class)
