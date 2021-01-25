@@ -50,7 +50,12 @@ Diese Erweiterung verwaltet die EU-STIN (European Union Sales Tax Identification
 
 Viel Spaß bei der Benutzung!
 
-**[Spenden](https://www.syncgw.com/donation-de.html)**  **[Contao Forum](https://community.contao.org/de/showthread.php?34238-isotope_stin)**
+<a href="https://www.paypal.com/donate?hosted_button_id=RQMP8CWD2Y2XC" target="_blank">
+  <img src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif" alt="Spenden mit PayPal"/>
+</a>
+<a href="https://community.contao.org/de/showthread.php?34238-isotope_stin" target="_blank">
+  <img src="https://community.contao.org/de/images/layout/contao_community.svg" alt="Unterstützung" width="100" height="50"/>
+</a>
 
 ## <a name="2"></a>2. English
 
@@ -99,4 +104,9 @@ This extension handles EU-STIN (European Union Sales Tax Identification Number) 
 
 Please enjoy!
 
-**[Donation](https://www.syncgw.com/donation-en.html)**  **[Contao Forum](https://community.contao.org/de/showthread.php?34238-isotope_stin)**
+<a href="https://www.paypal.com/donate?hosted_button_id=RQMP8CWD2Y2XC" target="_blank">
+  <img src="https://www.paypalobjects.com/en_US/DK/i/btn/btn_donateCC_LG.gif" alt="Donate with PayPal"/>
+</a>
+<a href="https://community.contao.org/de/showthread.php?34238-isotope_stin" target="_blank">
+  <img src="https://community.contao.org/de/images/layout/contao_community.svg" alt="Support" width="100" height="50"/>
+</a>
